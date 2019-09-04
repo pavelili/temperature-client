@@ -1,6 +1,15 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
+import LocationDetail from '../containers/LocationDetail';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <Router>
+      <Route path="/temps/:_id" component={LocationDetail}/>
+    </Router>
+  );
 }
   
