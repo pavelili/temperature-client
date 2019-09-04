@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import temps from './tempReducer';
+import location from './locationReducer';
 
 export default combineReducers({
-  temps
+  location
 });
