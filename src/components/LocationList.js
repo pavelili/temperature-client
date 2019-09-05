@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function LocationList({ locations }) {
   const locationList = locations.map(l => (
     <li key={l._id}>
-      <Link to={`/temps/${l._id}`}>{location.name}</Link>
+      <Link to={`/temps/${l._id}`}>{l.name}</Link>
     </li>
   ));
 
