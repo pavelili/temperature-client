@@ -8,7 +8,7 @@ import LocationDetail from '../containers/LocationDetail';
 export default function App() {
   return (
     <Router>
-      <Route path="/temps/:_id" component={LocationDetail}/>
+      <Route path="/temps/:id" component={LocationDetail}/>
     </Router>
   );
 }

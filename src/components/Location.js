@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Location({ location }) {
   const tempList = location.temps.map(t => (
-    <li key={t.id}>{t}</li>
+    <li key={t}>{t}</li>
   ));
 
   return (

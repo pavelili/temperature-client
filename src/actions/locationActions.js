@@ -1,8 +1,8 @@
-import { getLocation } from '../services/tempApi';
+import { getLocationById } from '../services/tempApi';
 
 export const FETCH_LOCATION = 'FETCH_LOCATION';
 
-export const fetchLocation = () => ({
+export const fetchLocation = (id) => ({
   type: FETCH_LOCATION,
-  payload: getLocation()
+  payload: getLocationById(id)
 });
